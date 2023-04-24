@@ -13,6 +13,14 @@ pip install numpy torch tensorboardX open3d
 pip install git+https://github.com/mit-han-lab/torchsparse.git@v1.4.0
 ```
 
+## Scannet
+Download the scannet and prepare it.
+
+```bash
+PYTHONPATH=./:$PYTHONPATH python3 tools/prepare_scannet.py --meta_path=data/meta --in_path=<scannetpath>
+ --out_path=data/scannet 
+```
+
 ## Models
 We release our trained models and training logs in "work_dirs".
 
